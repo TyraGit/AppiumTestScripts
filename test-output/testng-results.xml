@@ -2,15 +2,23 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-13T22:23:53 MYT" name="Default suite" finished-at="2024-08-13T22:24:09 MYT" duration-ms="16173">
+  <suite started-at="2024-08-13T22:46:01 MYT" name="Default suite" finished-at="2024-08-13T22:46:21 MYT" duration-ms="19903">
     <groups>
     </groups>
-    <test started-at="2024-08-13T22:23:53 MYT" name="Default test" finished-at="2024-08-13T22:24:09 MYT" duration-ms="16173">
+    <test started-at="2024-08-13T22:46:01 MYT" name="Default test" finished-at="2024-08-13T22:46:21 MYT" duration-ms="19903">
       <class name="athirahrahmat.AppiumTest">
-        <test-method signature="Test1()[pri:0, instance:athirahrahmat.AppiumTest@2ef3eef9]" started-at="2024-08-13T22:23:53 MYT" name="Test1" finished-at="2024-08-13T22:24:09 MYT" duration-ms="16147" status="PASS">
+        <test-method is-config="true" signature="configurations()[pri:0, instance:athirahrahmat.AppiumTest@1fa268de]" started-at="2024-08-13T22:46:01 MYT" name="configurations" finished-at="2024-08-13T22:46:08 MYT" duration-ms="7351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configurations -->
+        <test-method signature="Test1()[pri:0, instance:athirahrahmat.AppiumTest@1fa268de]" started-at="2024-08-13T22:46:08 MYT" name="Test1" finished-at="2024-08-13T22:46:16 MYT" duration-ms="7242" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:athirahrahmat.AppiumTest@1fa268de]" started-at="2024-08-13T22:46:16 MYT" name="tearDown" finished-at="2024-08-13T22:46:21 MYT" duration-ms="5286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- athirahrahmat.AppiumTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
