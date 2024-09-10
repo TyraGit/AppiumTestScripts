@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-13T22:46:01 MYT" name="Default suite" finished-at="2024-08-13T22:46:21 MYT" duration-ms="19903">
+  <suite started-at="2024-09-11T03:24:29 MYT" name="Default suite" finished-at="2024-09-11T03:24:51 MYT" duration-ms="21510">
     <groups>
     </groups>
-    <test started-at="2024-08-13T22:46:01 MYT" name="Default test" finished-at="2024-08-13T22:46:21 MYT" duration-ms="19903">
-      <class name="athirahrahmat.AppiumTest">
-        <test-method is-config="true" signature="configurations()[pri:0, instance:athirahrahmat.AppiumTest@1fa268de]" started-at="2024-08-13T22:46:01 MYT" name="configurations" finished-at="2024-08-13T22:46:08 MYT" duration-ms="7351" status="PASS">
+    <test started-at="2024-09-11T03:24:29 MYT" name="Default test" finished-at="2024-09-11T03:24:51 MYT" duration-ms="21510">
+      <class name="athirahrahmat.Fragments">
+        <test-method is-config="true" signature="configurations()[pri:0, instance:athirahrahmat.Fragments@4fb61f4a]" started-at="2024-09-11T03:24:29 MYT" name="configurations" finished-at="2024-09-11T03:24:37 MYT" duration-ms="7499" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configurations -->
-        <test-method signature="Test1()[pri:0, instance:athirahrahmat.AppiumTest@1fa268de]" started-at="2024-08-13T22:46:08 MYT" name="Test1" finished-at="2024-08-13T22:46:16 MYT" duration-ms="7242" status="PASS">
+        <test-method signature="fragmentPage()[pri:0, instance:athirahrahmat.Fragments@4fb61f4a]" started-at="2024-09-11T03:24:37 MYT" name="fragmentPage" finished-at="2024-09-11T03:24:40 MYT" duration-ms="3539" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:athirahrahmat.AppiumTest@1fa268de]" started-at="2024-08-13T22:46:16 MYT" name="tearDown" finished-at="2024-08-13T22:46:21 MYT" duration-ms="5286" status="PASS">
+        </test-method> <!-- fragmentPage -->
+        <test-method signature="launchInternetWindow()[pri:0, instance:athirahrahmat.Fragments@4fb61f4a]" started-at="2024-09-11T03:24:40 MYT" name="launchInternetWindow" finished-at="2024-09-11T03:24:44 MYT" depends-on-methods="athirahrahmat.Fragments.fragmentPage" duration-ms="3540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchInternetWindow -->
+        <test-method signature="listPreference()[pri:0, instance:athirahrahmat.Fragments@4fb61f4a]" started-at="2024-09-11T03:24:44 MYT" name="listPreference" finished-at="2024-09-11T03:24:46 MYT" depends-on-methods="athirahrahmat.Fragments.fragmentPage" duration-ms="2407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listPreference -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:athirahrahmat.Fragments@4fb61f4a]" started-at="2024-09-11T03:24:46 MYT" name="tearDown" finished-at="2024-09-11T03:24:51 MYT" duration-ms="4486" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- athirahrahmat.AppiumTest -->
+      </class> <!-- athirahrahmat.Fragments -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

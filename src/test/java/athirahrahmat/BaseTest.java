@@ -25,7 +25,7 @@ public class BaseTest {
 		//start appium server programmatically instead using Terminal
 		AppiumServiceBuilder builder = new AppiumServiceBuilder()
                 .withAppiumJS(new File("/Users/athirah/.npm-global/lib/node_modules/appium/build/lib/main.js"))
-                .withIPAddress("192.168.1.121")
+                .withIPAddress("192.168.1.109")
                 .usingPort(4723)
                 .usingDriverExecutable(new File("/opt/homebrew/bin/node"));
         
@@ -36,9 +36,9 @@ public class BaseTest {
 		
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName("Pixel 8 API 35");
-		options.setApp("/Users/athirah/eclipse-workspace/Appium/src/test/java/resources/ApiDemos-debug.apk");
+		options.setApp("/Users/athirah/eclipse-workspace/AppiumTestScripts/src/test/java/resources/ApiDemos-debug.apk");
 		
-		ad = new AndroidDriver((new URI("http://192.168.1.121:4723/")).toURL(), options);
+		ad = new AndroidDriver((new URI("http://192.168.1.109:4723/")).toURL(), options);
 		
 		ad.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		

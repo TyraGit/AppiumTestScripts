@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="athirahrahmat.AppiumTest" class="method navigator-link" hash-for-method="Test1">Test1</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="athirahrahmat.Fragments" class="method navigator-link" hash-for-method="fragmentPage">fragmentPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="athirahrahmat.Fragments" class="method navigator-link" hash-for-method="launchInternetWindow">launchInternetWindow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="athirahrahmat.Fragments" class="method navigator-link" hash-for-method="listPreference">listPreference</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -121,14 +131,28 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">athirahrahmat.AppiumTest</span>
+              <span class="class-name">athirahrahmat.Fragments</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Test1">
-                  </a> <!-- Test1 -->
-                  <span class="method-name">Test1</span>
+                  <a name="fragmentPage">
+                  </a> <!-- fragmentPage -->
+                  <span class="method-name">fragmentPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="launchInternetWindow">
+                  </a> <!-- launchInternetWindow -->
+                  <span class="method-name">launchInternetWindow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="listPreference">
+                  </a> <!-- listPreference -->
+                  <span class="method-name">listPreference</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,7 +160,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/bj/1skm_h4s1gb7_z6fmpfr60pr0000gn/T/testng-eclipse--1910192442/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/bj/1skm_h4s1gb7_z6fmpfr60pr0000gn/T/testng-eclipse-1783538628/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,7 +169,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;athirahrahmat.AppiumTest&quot;/&gt;
+      &lt;class name=&quot;athirahrahmat.Fragments&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -185,16 +209,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Test1')
-data.setCell(0, 2, 'athirahrahmat.AppiumTest')
-data.setCell(0, 3, 7242);
+data.setCell(0, 1, 'launchInternetWindow')
+data.setCell(0, 2, 'athirahrahmat.Fragments')
+data.setCell(0, 3, 3540);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'fragmentPage')
+data.setCell(1, 2, 'athirahrahmat.Fragments')
+data.setCell(1, 3, 3539);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'listPreference')
+data.setCell(2, 2, 'athirahrahmat.Fragments')
+data.setCell(2, 3, 2407);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -220,18 +252,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">athirahrahmat.AppiumTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">athirahrahmat.Fragments</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">configurations</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">Test1</span>
-                <span class="method-start">7358 ms</span>
+                <span class="method-name">fragmentPage</span>
+                <span class="method-start">7508 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">launchInternetWindow</span>
+                <span class="method-start">11057 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">listPreference</span>
+                <span class="method-start">14603 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">14606 ms</span>
+                <span class="method-start">17014 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

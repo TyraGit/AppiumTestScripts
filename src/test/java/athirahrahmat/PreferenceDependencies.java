@@ -6,10 +6,10 @@ import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumBy;
 
-public class AppiumTest extends BaseTest {
+public class PreferenceDependencies extends BaseTest {
 
 	@Test
-	public void Test1() {
+	public void WifiSettings() {
 		
 		ad.findElement(AppiumBy.accessibilityId("Preference")).click();
 		ad.findElement(By.xpath("//android.widget.TextView[@content-desc='3. Preference dependencies']")).click();
