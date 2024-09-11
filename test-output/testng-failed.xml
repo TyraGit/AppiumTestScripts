@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="athirahrahmat.Fragments">
+      <class name="athirahrahmat.iOSBasics">
         <methods>
-          <include name="tearDown"/>
           <include name="configurations"/>
-          <include name="radioButtons"/>
+          <include name="tearDown"/>
+          <include name="DatePickerItem"/>
         </methods>
-      </class> <!-- athirahrahmat.Fragments -->
+      </class> <!-- athirahrahmat.iOSBasics -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

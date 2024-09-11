@@ -14,9 +14,9 @@ import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 
-public class BaseTest {
+public class AndroidBaseTest {
 	
-	public AndroidDriver ad;
+	public AndroidDriver androidDriver;
 	public AppiumDriverLocalService service;
 	
 	@BeforeClass
@@ -38,15 +38,15 @@ public class BaseTest {
 		options.setDeviceName("Pixel 8 API 35");
 		options.setApp("/Users/athirah/eclipse-workspace/AppiumTestScripts/src/test/java/resources/ApiDemos-debug.apk");
 		
-		ad = new AndroidDriver((new URI("http://192.168.1.109:4723/")).toURL(), options);
+		androidDriver = new AndroidDriver((new URI("http://192.168.1.109:4723/")).toURL(), options);
 		
-		ad.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		androidDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 	}
 	
 	@AfterClass
 	public void tearDown() {
-		ad.quit();
+		androidDriver.quit();
 		service.stop();
 	}
 
