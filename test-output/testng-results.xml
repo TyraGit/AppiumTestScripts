@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-12T01:58:32 MYT" name="Default suite" finished-at="2024-09-12T01:58:59 MYT" duration-ms="26468">
+  <suite started-at="2024-09-17T22:02:11 MYT" name="Default suite" finished-at="2024-09-17T22:02:46 MYT" duration-ms="35527">
     <groups>
     </groups>
-    <test started-at="2024-09-12T01:58:32 MYT" name="Default test" finished-at="2024-09-12T01:58:59 MYT" duration-ms="26468">
-      <class name="athirahrahmat.iOSBasics">
-        <test-method is-config="true" signature="configurations()[pri:0, instance:athirahrahmat.iOSBasics@67d48005]" started-at="2024-09-12T01:58:32 MYT" name="configurations" finished-at="2024-09-12T01:58:48 MYT" duration-ms="15790" status="PASS">
+    <test started-at="2024-09-17T22:02:11 MYT" name="Default test" finished-at="2024-09-17T22:02:46 MYT" duration-ms="35527">
+      <class name="android.Views">
+        <test-method is-config="true" signature="configurations()[pri:0, instance:android.Views@2a798d51]" started-at="2024-09-17T22:02:11 MYT" name="configurations" finished-at="2024-09-17T22:02:16 MYT" duration-ms="5145" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configurations -->
-        <test-method signature="DatePickerItem()[pri:0, instance:athirahrahmat.iOSBasics@67d48005]" started-at="2024-09-12T01:58:48 MYT" name="DatePickerItem" finished-at="2024-09-12T01:58:53 MYT" duration-ms="5369" status="PASS">
+        <test-method signature="fiveStarsRatingBar()[pri:0, instance:android.Views@2a798d51]" started-at="2024-09-17T22:02:16 MYT" name="fiveStarsRatingBar" finished-at="2024-09-17T22:02:24 MYT" duration-ms="7802" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DatePickerItem -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:athirahrahmat.iOSBasics@67d48005]" started-at="2024-09-12T01:58:53 MYT" name="tearDown" finished-at="2024-09-12T01:58:59 MYT" duration-ms="5282" status="PASS">
+        </test-method> <!-- fiveStarsRatingBar -->
+        <test-method signature="dragAndDropRedCircle()[pri:0, instance:android.Views@2a798d51]" started-at="2024-09-17T22:02:24 MYT" name="dragAndDropRedCircle" finished-at="2024-09-17T22:02:32 MYT" depends-on-methods="android.Views.fiveStarsRatingBar" duration-ms="7984" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragAndDropRedCircle -->
+        <test-method signature="DatePickerAndTimeSpinner()[pri:0, instance:android.Views@2a798d51]" started-at="2024-09-17T22:02:32 MYT" name="DatePickerAndTimeSpinner" finished-at="2024-09-17T22:02:41 MYT" depends-on-methods="android.Views.dragAndDropRedCircle" duration-ms="9086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DatePickerAndTimeSpinner -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:android.Views@2a798d51]" started-at="2024-09-17T22:02:41 MYT" name="tearDown" finished-at="2024-09-17T22:02:46 MYT" duration-ms="5456" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- athirahrahmat.iOSBasics -->
+      </class> <!-- android.Views -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

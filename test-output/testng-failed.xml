@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="athirahrahmat.iOSBasics">
+      <class name="android.Views">
         <methods>
-          <include name="configurations"/>
+          <include name="fiveStarsRatingBar"/>
           <include name="tearDown"/>
-          <include name="DatePickerItem"/>
+          <include name="DatePickerAndTimeSpinner"/>
+          <include name="dragAndDropRedCircle"/>
+          <include name="configurations"/>
         </methods>
-      </class> <!-- athirahrahmat.iOSBasics -->
+      </class> <!-- android.Views -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

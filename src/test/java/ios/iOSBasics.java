@@ -1,4 +1,4 @@
-package athirahrahmat;
+package ios;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -28,7 +28,7 @@ public class iOSBasics extends XCUIBaseTest {
 		System.out.println("This is the subtext from the alert: " + description); //print the subtext of an alert
 		iOSDriver.findElement(AppiumBy.iOSNsPredicateString("name == \"Choice One\"")).click();
 		
-		backToMainScreen(); //to go back to Main screen
+		goToMainScreenUsingBackButton(); //to go back to Main screen
 	}
 	
 	@Test
@@ -49,7 +49,7 @@ public class iOSBasics extends XCUIBaseTest {
 		}
 		
 		iOSDriver.findElement(AppiumBy.iOSNsPredicateString("name == \"Search\"")).click(); //click the Search button on top left corner to go back to previous screen
-		backToMainScreen(); //to go back to Main screen
+		goToMainScreenUsingBackButton(); //to go back to Main screen
 		
 	}
 	
@@ -66,17 +66,17 @@ public class iOSBasics extends XCUIBaseTest {
 		// Set the slider to 75%
 		minMaxSlider.sendKeys("0.20"); // Values are usually between "0" (0%) and "1" (100%)
 		
-		backToMainScreen(); //to go back to Main screen
+		goToMainScreenUsingBackButton(); //to go back to Main screen
 	}
 	
 	@Test
 	public void WebViewItem() {
 		//opening Web View item
-		scrollPage(); //scrolling the Main page
+		scrollPage("Web View"); //scrolling the Main page to find Web View
 		
 		iOSDriver.findElement(AppiumBy.iOSNsPredicateString("label == \"Web View\"")).click();
 		
-		backToMainScreen(); //to go back to Main screen
+		goToMainScreenUsingBackButton(); //to go back to Main screen
 	}
 	
 	@Test
@@ -111,7 +111,7 @@ public class iOSBasics extends XCUIBaseTest {
 				+ "/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeStaticText")).getText();
 		System.out.println("The selected date and time are: " + datetime);
 		
-		backToMainScreen(); //to go back to Main screen
+		goToMainScreenUsingBackButton(); //to go back to Main screen
 		
 	}
 

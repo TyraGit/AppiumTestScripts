@@ -1,4 +1,4 @@
-package athirahrahmat;
+package ios;
 
 import java.io.File;
 import java.net.MalformedURLException;
@@ -53,16 +53,19 @@ public class XCUIBaseTest {
 	}
 	
 	
-	public void backToMainScreen() {
+	public void goToMainScreenUsingBackButton() {
 		
 		//clicking the back button to go back to the Main screen
 		WebElement backButton = iOSDriver.findElement(AppiumBy.iOSClassChain("**/XCUIElementTypeButton[`name == \"UIKitCatalog\"`]"));
 		backButton.click();		
 	}
 	
-	//Method to perform scroll down action using W3C Actions
-    public void scrollPage() {
-        // Get screen dimensions for swipe calculations
+	public void scrollPage(String elementName) {
+    	//scroll page using iOS Class Chain
+    	iOSDriver.findElement(AppiumBy.iOSClassChain("**/XCUIElementTypeScrollView[`name == '" + elementName + "'`]")).click();
+    	
+    	
+    	/*// Get screen dimensions for swipe calculations
         Dimension size = iOSDriver.manage().window().getSize();
         int startX = size.width / 2;
         int startY = (int) (size.height * 0.3); // Starting point near the top of the screen
@@ -79,7 +82,7 @@ public class XCUIBaseTest {
                 .addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
 
         // Perform the scrolling action
-        iOSDriver.perform(Collections.singletonList(scrollDown));
+        iOSDriver.perform(Collections.singletonList(scrollDown));*/
     }
 	
 	@AfterClass
